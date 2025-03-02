@@ -9,7 +9,7 @@ import resumePdf from '../assets/porto/resume-example.pdf';
 const Profile = () => {
   const profileData = {
     name: 'Alfarez Syahputra Kuri',
-    role: 'Software and Game Development Educator💻',
+    role: 'Technical Educator & Software Development Manager💻',
     resumeLink: resumePdf,
     socialLinks: [
       {

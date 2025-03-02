@@ -7,23 +7,21 @@ import arrowIcon from '../assets/img/arrow.png';
 const Experience = () => {
   const experienceData = [
     {
-      category: 'Frontend Development',
+      category: 'Web Development',
       skills: [
         { name: 'HTML', level: 'Experienced' },
         { name: 'CSS', level: 'Experienced' },
-        { name: 'SASS', level: 'Intermediate' },
         { name: 'JavaScript', level: 'Basic' },
-        { name: 'TypeScript', level: 'Basic' },
-        { name: 'Material UI', level: 'Intermediate' },
+        { name: 'Figma', level: 'Basic' },
+        { name: 'Laravel', level: 'Basic' },
+        { name: 'Git', level: 'Intermediate' },
       ],
     },
     {
-      category: 'Backend Development',
+      category: 'Game Development',
       skills: [
-        { name: 'PostgreSQL', level: 'Basic' },
-        { name: 'Node JS', level: 'Intermediate' },
-        { name: 'Express JS', level: 'Intermediate' },
-        { name: 'Git', level: 'Intermediate' },
+        { name: 'Consturct', level: 'Experienced' },
+        { name: 'Unity', level: 'Intermediate' },
       ],
     },
   ];
@@ -32,6 +30,7 @@ const Experience = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Experience</h1>
+      <p className="section__text__p2">I have experience teaching in various technologies and tools. Here are some of them:</p>
       <div className="experience-details-container">
         <div className="about-containers">
           {experienceData.map((category, index) => (
