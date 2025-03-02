@@ -10,15 +10,15 @@ const Contact = () => {
       id: 1,
       icon: emailIcon,
       alt: 'Email icon',
-      text: 'Example@gmail.com',
-      href: 'mailto:examplemail@gmail.com',
+      text: 'kurialfarez@gmail.com',
+      href: 'mailto:kurialfarez@gmail.com',
     },
     {
       id: 2,
       icon: linkedinIcon,
       alt: 'LinkedIn icon',
       text: 'LinkedIn',
-      href: 'https://www.linkedin.com',
+      href: 'https://www.linkedin.com/in/alfarez-syahputra-kuri-b53bab231',
     },
   ];
 

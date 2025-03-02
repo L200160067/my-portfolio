@@ -1,8 +1,8 @@
-import React from 'react';
-import profilePic from '../assets/img/profile-pic.JPG';
-import experienceIcon from '../assets/img/experience.png';
-import educationIcon from '../assets/img/education.png';
-import arrowIcon from '../assets/img/arrow.png';
+import React from "react";
+import profilePic from "../assets/img/profile-pic.JPG";
+import experienceIcon from "../assets/img/experience.png";
+import educationIcon from "../assets/img/education.png";
+import arrowIcon from "../assets/img/arrow.png";
 
 const About = () => {
   return (
@@ -18,22 +18,30 @@ const About = () => {
             <div className="details-container">
               <img src={experienceIcon} alt="Experience" className="icon" />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>
+                3+ years <br />
+                Teaching & Software Development
+              </p>
             </div>
             <div className="details-container">
               <img src={educationIcon} alt="Education" className="icon" />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>
+                B.Sc. Bachelors Degree
+                <br />
+                M.Sc. Masters Degree
+              </p>
             </div>
           </div>
           <div className="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              🚀 Hi, I’m Alfarez Syahputra Kuri! Educator at SMK Muhammadiyah 1
+              Sukoharjo, specializing in Software & Game Development. I mentor
+              young developers through Mutuharjo GameDev and drive innovation as
+              Secretary of the Software Development & Game Department. Beyond
+              teaching, I lead M-One Solution Software House, managing tech
+              solutions for multiple clients. Let’s build the future—one line of
+              code at a time! 💻✨
             </p>
           </div>
         </div>
@@ -42,7 +50,7 @@ const About = () => {
         src={arrowIcon}
         alt="Arrow"
         className="icon arrow"
-        onClick={() => window.location.href='./#experience'}
+        onClick={() => (window.location.href = "./#experience")}
       />
     </section>
   );

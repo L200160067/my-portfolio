@@ -12,8 +12,8 @@ const Profile = () => {
       </div>
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
-        <h1 className="title">Alfarez Syahputra Kuri</h1>
-        <p className="section__text__p2">Frontend Developer</p>
+        <h1 className="title">Alfarez Syahputra Kuri, S.Kom</h1>
+        <p className="section__text__p2">Software and Game Development Educator💻</p>
         <div className="btn-container">
           <button
             className="btn btn-color-2"
@@ -30,13 +30,13 @@ const Profile = () => {
             src={linkedinIcon}
             alt="LinkedIn"
             className="icon"
-            onClick={() => window.location.href='https://linkedin.com/'}
+            onClick={() => window.location.href='https://www.linkedin.com/in/alfarez-syahputra-kuri-b53bab231'}
           />
           <img
             src={githubIcon}
             alt="GitHub"
             className="icon"
-            onClick={() => window.location.href='https://github.com/'}
+            onClick={() => window.location.href='https://github.com/L200160067'}
           />
         </div>
       </div>
