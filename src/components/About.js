@@ -43,7 +43,7 @@ const About = () => {
       <h1 className="title">About Me</h1>
       <div className="section-container">
         <div className="section__pic-container">
-          <img src={aboutData.profilePic} alt="Profile picture" className="about-pic" />
+          <img src={aboutData.profilePic} alt="Profile" className="about-pic" />
         </div>
         <div className="about-details-container">
           <div className="about-containers">
@@ -51,7 +51,14 @@ const About = () => {
               <div key={detail.id} className="details-container">
                 <img src={detail.icon} alt={detail.title} className="icon" />
                 <h3>{detail.title}</h3>
-                <p>{detail.description}</p>
+                <p>
+                  {detail.description.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </p>
               </div>
             ))}
           </div>
@@ -61,7 +68,7 @@ const About = () => {
         </div>
       </div>
       <a href="#experience">
-        <img src={arrowIcon} alt="Arrow icon" className="icon arrow" />
+        <img src={arrowIcon} alt="Arrow" className="icon arrow" />
       </a>
     </section>
   );
