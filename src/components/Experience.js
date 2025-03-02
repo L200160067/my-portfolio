@@ -30,7 +30,7 @@ const Experience = () => {
     <section id="experience">
       <p className="section__text__p1">Explore My</p>
       <h1 className="title">Experience</h1>
-      <p className="section__text__p2">I have experience teaching in various technologies and tools. Here are some of them:</p>
+      <p className="section__text__p2 desc-align">I have experience teaching in various technologies and tools. Here are some of them:</p>
       <div className="experience-details-container">
         <div className="about-containers">
           {experienceData.map((category, index) => (
