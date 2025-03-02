@@ -5,6 +5,7 @@ import project1 from '../assets/porto/project-1.png';
 import project2 from '../assets/porto/project-2.png';
 import project3 from '../assets/porto/project-3.png';
 import arrowIcon from '../assets/img/arrow.png';
+
 const Projects = () => {
   const projects = [
     {
@@ -54,12 +55,9 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <img
-        src={arrowIcon}
-        alt="Arrow icon"
-        className="icon arrow"
-        onClick={() => (window.location.href = './#contact')}
-      />
+      <a href="#contact">
+        <img src={arrowIcon} alt="Arrow" className="icon arrow" />
+      </a>
     </section>
   );
 };

@@ -14,12 +14,12 @@ const Profile = () => {
     socialLinks: [
       {
         icon: linkedinIcon,
-        alt: 'My LinkedIn profile',
+        alt: 'LinkedIn',
         url: 'https://www.linkedin.com/in/alfarez-syahputra-kuri-b53bab231/',
       },
       {
         icon: githubIcon,
-        alt: 'My Github profile',
+        alt: 'GitHub',
         url: 'https://github.com/L200160067',
       },
     ],
@@ -28,19 +28,16 @@ const Profile = () => {
   return (
     <section id="profile">
       <div className="section__pic-container">
-        <img src={profilePic} alt={`${profileData.name} profile picture`} />
+        <img src={profilePic} alt={`${profileData.name} profile`} />
       </div>
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
         <h1 className="title">{profileData.name}</h1>
         <p className="section__text__p2">{profileData.role}</p>
         <div className="btn-container">
-          <button
-            className="btn btn-color-2"
-            onClick={() => window.open(profileData.resumeLink)}
-          >
-            Download CV
-          </button>
+          <a href={profileData.resumeLink} download>
+            <button className="btn btn-color-2">Download CV</button>
+          </a>
           <a href="#contact">
             <button className="btn btn-color-1">Contact Info</button>
           </a>
