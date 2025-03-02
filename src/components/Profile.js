@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <section id="profile">
       <div className="section__pic-container">
-      <img src="./assets/img/profile-pic-2.JPG" alt="Alfarez Syahputra Kuri profile picture" />
+        <img src="./assets/img/profile-pic-2.JPG" alt="Alfarez Syahputra Kuri profile picture" />
       </div>
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
@@ -15,7 +15,7 @@ const Profile = () => {
         <div className="btn-container">
           <button
             className="btn btn-color-2"
-            onClick={() => window.open('./assets/porto/resume-example.pdf')}
+            onClick={() => window.open('./assets/resume-example.pdf')}
           >
             Download CV
           </button>
