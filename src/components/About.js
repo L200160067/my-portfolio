@@ -27,9 +27,9 @@ const About = () => {
               <img src={educationIcon} alt="Education" className="icon" />
               <h3>Education</h3>
               <p>
-                B.Sc. Bachelors Degree
+              Bachelor of Computer Science
                 <br />
-                M.Sc. Masters Degree
+                {/* M.Sc. Masters Degree */}
               </p>
             </div>
           </div>
