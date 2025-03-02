@@ -1,29 +1,40 @@
 import React from 'react';
 import '../assets/css/style.css';
 import '../assets/css/mediaqueries.css';
+import emailIcon from '../assets/img/email.png';
+import linkedinIcon from '../assets/img/linkedin.png';
 
 const Contact = () => {
+  const contactData = [
+    {
+      id: 1,
+      icon: emailIcon,
+      alt: 'Email icon',
+      text: 'Example@gmail.com',
+      href: 'mailto:examplemail@gmail.com',
+    },
+    {
+      id: 2,
+      icon: linkedinIcon,
+      alt: 'LinkedIn icon',
+      text: 'LinkedIn',
+      href: 'https://www.linkedin.com',
+    },
+  ];
+
   return (
     <section id="contact">
       <p className="section__text__p1">Get in Touch</p>
       <h1 className="title">Contact Me</h1>
       <div className="contact-info-upper-container">
-        <div className="contact-info-container">
-          <img
-            src="./assets/img/email.png"
-            alt="Email icon"
-            className="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div className="contact-info-container">
-          <img
-            src="./assets/img/linkedin.png"
-            alt="LinkedIn icon"
-            className="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
+        {contactData.map((contact) => (
+          <div key={contact.id} className="contact-info-container">
+            <img src={contact.icon} alt={contact.alt} className="icon contact-icon" />
+            <p>
+              <a href={contact.href}>{contact.text}</a>
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
