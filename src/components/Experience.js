@@ -9,11 +9,8 @@ const Experience = () => {
     {
       category: 'Web Development',
       skills: [
-        { name: 'HTML', level: 'Experienced' },
-        { name: 'CSS', level: 'Experienced' },
-        { name: 'JavaScript', level: 'Basic' },
-        { name: 'Figma', level: 'Basic' },
-        { name: 'Laravel', level: 'Basic' },
+        { name: 'HTML, CSS, JS, Figma', level: 'Experienced' },
+        { name: 'Laravel', level: 'Intermediate' },
         { name: 'Git', level: 'Intermediate' },
       ],
     },
@@ -22,8 +19,19 @@ const Experience = () => {
       skills: [
         { name: 'Consturct', level: 'Experienced' },
         { name: 'Unity', level: 'Intermediate' },
+        { name: 'Blender', level: 'Intermediate' },
       ],
     },
+
+    {
+      category: 'Data Scientist',
+      skills: [
+        { name: 'Excel', level: 'Experienced' },
+        { name: 'Python', level: 'Intermediate' },
+        { name: 'SQL', level: 'Intermediate' },
+      ],
+    },
+    
   ];
 
   return (

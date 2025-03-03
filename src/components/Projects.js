@@ -1,9 +1,9 @@
 import React from 'react';
 import '../assets/css/style.css';
 import '../assets/css/mediaqueries.css';
-import project1 from '../assets/porto/project-1.png';
-import project2 from '../assets/porto/project-2.png';
-import project3 from '../assets/porto/project-3.png';
+import project1 from '../assets/porto/1.png';
+import project2 from '../assets/porto/2.png';
+import project3 from '../assets/porto/3.png';
 import arrowIcon from '../assets/img/arrow.png';
 
 const Projects = () => {
